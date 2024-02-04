@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  display: flex;
+  height: 100svh;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+  margin: 0px;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+.w-tom1 {
+  background-image: url("./images/tom1.png");
+}
+
+.a-tom2 {
+  background-image: url("./images/tom2.png");
+}
+
+.s-tom3 {
+  background-image: url("./images/tom3.png");
+}
+
+.d-tom4 {
+  background-image: url("./images/tom4.png");
+}
+
+.j-snare {
+  background-image: url("./images/snare.png");
+}
+
+.k-crash {
+  background-image: url("./images/crash.png");
+}
+
+.l-kick {
+  background-image: url("./images/kick.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+.active,
+.drum:active {
+  opacity: 0.7; /* Slightly dim the button to indicate it's pressed */
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5); /* Soft white glow */
+  transform: scale(0.98); /* Slightly reduce the size to simulate pressing */
+  transition: transform 0.1s, opacity 0.1s; /* Smooth transition for feedback */
+}
